@@ -1,0 +1,15 @@
+version: 4.1.29
+steps:
+  - prompt: Locate the "Get In Touch" button on the homepage.
+    commands:
+      - command: hover-text
+        text: Get In Touch
+        description: button on the homepage
+        action: click
+      - command: hover-text
+        text: Contact
+        description: button in the top right of the header
+        action: click
+      - command: scroll-until-text
+        text: Get In Touch
+        direction: down
