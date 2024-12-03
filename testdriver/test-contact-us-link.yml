@@ -1,0 +1,20 @@
+version: 4.1.29
+steps:
+  - prompt: Locate the "Contact" link in the header.
+    commands:
+      - command: hover-text
+        text: Contact
+        description: contact link in the header
+        action: click
+  - prompt: Click the "Contact" link.
+    commands:
+      - command: hover-text
+        text: Contact
+        description: contact link in the header
+        action: click
+  - prompt: >-
+      Assert that the contact page loads displaying the necessary contact
+      information.  # Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: the contact page displays "Journey"
