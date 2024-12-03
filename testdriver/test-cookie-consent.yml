@@ -1,0 +1,16 @@
+version: 4.1.29
+steps:
+  - prompt: Interact with the cookie consent banner.
+    commands:
+      - command: hover-text
+        text: Accept All Cookies
+        description: button to accept all cookies in the consent banner
+        action: click
+      - command: scroll
+        direction: down
+  - prompt: >-
+      Assert that the banner disappears and cookies are accepted.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: the cookie consent banner is not visible
