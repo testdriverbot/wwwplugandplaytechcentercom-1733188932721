@@ -1,0 +1,14 @@
+version: 4.1.29
+steps:
+  - prompt: Ensure the webpage loads completely.
+    commands:
+      - command: hover-text
+        text: Accept All Cookies
+        description: cookie consent button
+        action: click
+  - prompt: >-
+      Assert that the "Plug and Play" logo is visible.  # Use the content of the
+      file from the environment
+    commands:
+      - command: assert
+        expect: the "Plug and Play" logo is visible
