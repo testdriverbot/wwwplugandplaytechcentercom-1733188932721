@@ -1,0 +1,28 @@
+version: 4.1.29
+steps:
+  - prompt: Hover over each main navigation menu item.
+    commands:
+      - command: hover-text
+        text: Innovation Services
+        description: main navigation menu item
+        action: hover
+      - command: hover-text
+        text: Venture Capital
+        description: main navigation menu item
+        action: hover
+      - command: hover-text
+        text: Vertical Industries
+        description: main navigation menu item
+        action: hover
+      - command: hover-text
+        text: Insights
+        description: main navigation menu item
+        action: hover
+      - command: hover-text
+        text: About Us
+        description: main navigation menu item
+        action: hover
+      - command: hover-text
+        text: Locations
+        description: main navigation menu item
+        action: hover
